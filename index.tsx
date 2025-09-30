@@ -20,7 +20,7 @@ function App() {
     setResponse('');
 
     try {
-      const ai = new GoogleGenAI({apiKey: process.env.API_KEY});
+      const ai = new GoogleGenAI({apiKey: AIzaSyCXfRaQnx3PDVT7j6r9rOaLo-RxYdr0kwc});
       const stream = await ai.models.generateContentStream({
         model: 'gemini-2.5-flash',
         contents: prompt,
